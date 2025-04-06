@@ -21,13 +21,14 @@ public class Main {
                 "Максимальная сумма трат за неделю составила " + max + " рублей");
 
 
-        int[] averageExpenses = new int[]{4200, 7800, 3100, 5900, 9500};
-        double averageSum = 0;
+        int[] averageExpenses = {4200, 7800, 3100, 5900, 9500};
+        double sumAverage = 0;
         for (int expense : averageExpenses) {
-            averageSum += expense;
+            sumAverage += expense;
         }
-        double average = averageSum / 5;
-        System.out.println("Средняя сумма трат за месяц составила" + average + "рублей");
+        double average = sumAverage/averageExpenses.length;
+        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
+
 
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         int left = 0;
